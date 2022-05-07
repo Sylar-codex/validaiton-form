@@ -1,0 +1,84 @@
+$invalid : #FF0000;
+$valid: #00FF00;
+$bg-color: #A9A9A9;
+$white: #ffffff;
+$font-style:Arial,
+Helvetica,
+sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background: lighten($bg-color, 20%);
+}
+
+.container {
+    margin: 150px 0 0 400px;
+    border: 2px solid $white;
+    border-radius: 0px 15px 0 0;
+    height: 450px;
+    width: 450px;
+    box-shadow: 8px 8px 5px $bg-color;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.form-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    input {
+        outline: none;
+        border: 2px solid $white;
+        background: lighten($bg-color, 20%);
+        width: 80%;
+        padding: 20px;
+        margin: 10px 0;
+        border-radius: 100px;
+        box-shadow: 8px 20px 20px $bg-color inset;
+    }
+
+    ::placeholder {
+        padding-left: 10px;
+        font-size: 15px;
+    }
+
+    button {
+        text-align: center;
+        margin-top: 20px;
+        background: none;
+        border: none;
+        font-size: 25px;
+    }
+}
+
+#message {
+    display: none;
+    margin-top: 25px;
+    margin-left: 20px;
+
+    ul {
+        list-style: none;
+    }
+}
+
+.invalid {
+    color: $invalid;
+}
+
+.valid {
+    color: darken($valid, 10%)
+}
+
+@import 'mobile';

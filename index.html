@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Validtion Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Access to my heart</h1>
+        </div>
+        <div>
+            <form id="form" class="form-data">
+                <input id="email" name="" type="email" placeholder="input your email" required>
+                <input id="pWord" name="" type="password" placeholder="put your password" required>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+        <div id="message">
+            <ul>
+                <li id="char" class="invalid">must contain 8 character</li>
+                <li id="upper" class="invalid">must contain atleast an uppercase</li>
+                <li id="lower" class="invalid">must contain atleast a lowercase</li>
+                <li id="num" class="invalid">must contain at least a number</li>
+                <li id="special" class="invalid">must contain atleast a special character</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
